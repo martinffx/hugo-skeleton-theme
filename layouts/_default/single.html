@@ -1,0 +1,21 @@
+{{ partial "head" . }}
+<body>
+    {{ partial "header" . }}
+    {{ partial "navigation" . }}
+
+    <main class="content" role="main">
+      <div class="container">
+        <div class="row">
+          <div class="two columns">
+          </div>
+          <div class="eight columns">
+            {{ .Content }}
+          </div>
+        </div>
+      </div>
+    </main>
+
+    {{ partial "footer" . }}
+    {{ partial "js" . }}
+</body>
+</html>

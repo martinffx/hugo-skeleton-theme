@@ -1,0 +1,15 @@
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="two columns">&nbsp;</div>
+      <div class="eight columns">
+        {{ with .Site.Params.title }}
+        <h1 class="blog-title" align="center"><a class="u-full-width" href="{{ $.Site.BaseURL }}">{{ . | markdownify }}</a></h1>
+        {{ end }}
+        {{ with .Site.Params.subtitle }}
+        <h3 class="blog-subtitle">{{ . | markdownify }}</h3>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</header>
