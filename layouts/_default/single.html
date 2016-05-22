@@ -1,5 +1,7 @@
-{{ partial "head" . }}
-<body>
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+  {{ partial "head" . }}
+  <body>
     {{ partial "header" . }}
     {{ partial "navigation" . }}
 
@@ -18,5 +20,5 @@
 
     {{ partial "footer" . }}
     {{ partial "js" . }}
-</body>
+  </body>
 </html>
