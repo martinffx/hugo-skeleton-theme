@@ -3,15 +3,11 @@
   {{ partial "head" . }}
   <body>
     {{ partial "header" . }}
-    {{ partial "navigation" . }}
 
     <main class="content" role="main">
       <div class="container">
         <div class="row">
-          <div class="two columns">
-            &nbsp;
-          </div>
-          <div class="eight columns">
+          <div class="twelve columns">
             {{ .Content }}
           </div>
         </div>
