@@ -380,3 +380,8 @@ article.preview > header > div.post-meta > strong > a {
 }
 
 article.preview > header > div.post-meta > em > time { font-size: 1.2rem; }
+
+header > div.container > hr {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
