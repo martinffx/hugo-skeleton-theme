@@ -12,7 +12,7 @@
       <a href="{{ .RSSLink }}" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
     </section>
 
-    <section class="copyright"><a href="{{ .Site.BaseURL }}">{{ .Site.Params.name }}</a> &copy; {{.Now.Format "2006"}}.<br/> {{ .Site.Params.copyright | markdownify }}</section>
+    <section class="copyright"><a href="{{ .Site.BaseURL }}">{{ .Site.Params.name }}</a> &copy; {{.Site.LastChange.Format "2006"}}.<br/> {{ .Site.Params.copyright | markdownify }}</section>
   </div>
 </footer>
 </div>
